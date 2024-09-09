@@ -1,23 +1,21 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from '@components/head'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Simple Next.js Page</title>
+        <meta name="description" content="A simple web page using Next.js" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h1>Welcome to My Simple Next.js Page</h1>
+        <p>This is a simple web page created as an example using Next.js.</p>
       </main>
 
-      <Footer />
+      <footer>
+        <p>&copy; 2023 My Simple Next.js Page</p>
+      </footer>
     </div>
   )
 }
